@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel || Exemplo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="carrossel-container">
+        <button id="prev" onclick="prevSlide()"><</button>
+        <div class="slider">
+            <img class="slide" src="imagens/imagem1.jpg" alt="">
+            <img class="slide" src="imagens/imagem2.jpg" alt="">
+            <img class="slide" src="imagens/imagem3.jpg" alt="">
+        </div>
+        <button id="next" onclick="nextSlide()">></button>
+        <nav class="carrossel-nav">
+            <span onclick="goToSlide(0)" class="nav-item active"></span>
+            <span onclick="goToSlide(1)" class="nav-item"></span>
+            <span onclick="goToSlide(2)" class="nav-item"></span>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
